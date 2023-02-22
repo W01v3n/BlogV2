@@ -12,7 +12,7 @@ const app = express();
 const listenPort = process.env.BLOG_V2_PORT;
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://localhost:27017/blogDB", { useNewUrlParser: true });
+mongoose.connect("mongodb://127.0.0.1:27017/blogDB", { useNewUrlParser: true });
 
 const postSchema = {
     title: String,
